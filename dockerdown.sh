@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "docker rm images"
 docker rm $(docker ps -aq)
-docker iamge rm $(docker images -q)
+echo "docker image rm"
+docker image rm $(docker images -q)
 exit 0
